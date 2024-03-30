@@ -1,0 +1,207 @@
+body {
+  background-color: #000;
+  color: transparent; /* Hide text by setting it to transparent */
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  perspective: 800px;
+  perspective-origin: 50% calc(50% - 150px);
+}
+
+.scene {
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.banner {
+  display: flex;
+  transform-style: preserve-3d;
+  animation: rotate 24s infinite linear;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+.panel {
+  position: absolute;
+  transform: translate(-50%, -50%) rotateY(var(--angle)) translateZ(190px); 
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+}
+
+.panel::before {
+  position: absolute;
+  left: var(--left);
+  content: "kaif.shaikh.siddique.Gaurav.Sanjiv";
+  font-size: 45px;
+  width: max-content;
+  color: hsl(var(--hue), 75%, 75%);
+}
+
+/* Define styles for each panel using a loop */
+.panel:nth-child(1) {
+  --left: 0px;
+  --hue: 0;
+  --angle: 0deg;
+}
+/* Define styles for each panel using a loop */
+.panel:nth-child(2) {
+  --left: -50px;
+  --hue: 15;
+  --angle: 15deg;
+}
+/* Define styles for each panel using a loop */
+.panel:nth-child(3) {
+  --left: -100px;
+  --hue: 30;
+  --angle: 30deg;
+}
+/* Define styles for each panel using a loop */
+.panel:nth-child(4) {
+  --left: -150px;
+  --hue: 45;
+  --angle: 45deg;
+}
+/* Define styles for each panel using a loop */
+.panel:nth-child(5) {
+  --left: -200px;
+  --hue: 60;
+  --angle: 60deg;
+}
+/* Define styles for each panel using a loop */
+.panel:nth-child(6) {
+  --left: -250px;
+  --hue: 75;
+  --angle: 75deg;
+}
+/* Define styles for each panel using a loop */
+.panel:nth-child(7) {
+  --left: -300px;
+  --hue: 90;
+  --angle: 90deg;
+}
+/* Define styles for each panel using a loop */
+.panel:nth-child(8) {
+  --left: -350px;
+  --hue: 105;
+  --angle: 105deg;
+}
+/* Define styles for each panel using a loop */
+.panel:nth-child(9) {
+  --left: -400px;
+  --hue: 120;
+  --angle: 120deg;
+}
+/* Define styles for each panel using a loop */
+.panel:nth-child(10) {
+  --left: -450px;
+  --hue: 135;
+  --angle: 135deg;
+}
+/* Define styles for each panel using a loop */
+.panel:nth-child(11) {
+  --left: -500px;
+  --hue: 150;
+  --angle: 150deg;
+}
+/* Define styles for each panel using a loop */
+.panel:nth-child(12) {
+  --left: -550px;
+  --hue: 165;
+  --angle: 165deg;
+}
+/* Define styles for each panel using a loop */
+.panel:nth-child(13) {
+  --left: -600px;
+  --hue: 180;
+  --angle: 180deg;
+}
+/* Define styles for each panel using a loop */
+.panel:nth-child(14) {
+  --left: -650px;
+  --hue: 195;
+  --angle: 195deg;
+}
+/* Define styles for each panel using a loop */
+.panel:nth-child(15) {
+  --left: -700px;
+  --hue: 210;
+  --angle: 210deg;
+}
+/* Define styles for each panel using a loop */
+.panel:nth-child(16) {
+  --left: -750px;
+  --hue: 225;
+  --angle: 225deg;
+}
+/* Define styles for each panel using a loop */
+.panel:nth-child(17) {
+  --left: -800px;
+  --hue: 240;
+  --angle: 240deg;
+}
+/* Define styles for each panel using a loop */
+.panel:nth-child(18) {
+  --left: -850px;
+  --hue: 255;
+  --angle: 255deg;
+}
+/* Define styles for each panel using a loop */
+.panel:nth-child(19) {
+  --left: -900px;
+  --hue: 270;
+  --angle: 270deg;
+}
+/* Define styles for each panel using a loop */
+.panel:nth-child(20) {
+  --left: -950px;
+  --hue: 285;
+  --angle: 285deg;
+}
+/* Define styles for each panel using a loop */
+.panel:nth-child(21) {
+  --left: -1000px;
+  --hue: 300;
+  --angle: 300deg;
+}
+/* Define styles for each panel using a loop */
+.panel:nth-child(22) {
+  --left: -1050px;
+  --hue: 315;
+  --angle: 315deg;
+}
+/* Define styles for each panel using a loop */
+.panel:nth-child(23) {
+  --left: -1100px;
+  --hue: 330;
+  --angle: 330deg;
+}
+/* Define styles for each panel using a loop */
+.panel:nth-child(24) {
+  --left: -1150px;
+  --hue: 345;
+  --angle: 345deg;
+}
+.panel:nth-child(25) {
+  --left: -1150px;
+  --hue: 345;
+  --angle: 345deg;
+}
+.panel:nth-child(26) {
+  --left: -1150px;
+  --hue: 345;
+  --angle: 345deg;
+}
+
+
+.screen {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background-image: linear-gradient(90deg, #000a, #0004, #000a);
+  transform: translate(-50%, -50%);
+}
